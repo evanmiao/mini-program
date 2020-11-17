@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header": "/components/header/header",
+    "accordion": "/components/accordion/accordion",
+    "footer": "/components/footer/footer"
+  }
+}

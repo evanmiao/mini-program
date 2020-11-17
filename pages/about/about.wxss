@@ -1,0 +1,39 @@
+.title {
+  font-size: 36rpx;
+  padding: 30rpx 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #333;
+}
+
+.content {
+  padding: 40rpx 3%;
+  font-size: 30rpx;
+}
+
+.content .wxParse-p {
+  line-height: 1.4;
+  padding: 20rpx 0;
+  text-indent: 60rpx;
+  color: #000;
+}
+
+.content .wxParse-p image {
+  display: block;
+  width: 100%;
+}
+
+.content .about-img {
+  margin: 40rpx 0;
+}
+
+.content .company {
+  display: block;
+  color: #ba1c20;
+  margin: 60rpx 0 80rpx;
+}
+
+.content .contact-text {
+  margin: 20rpx 0;
+}

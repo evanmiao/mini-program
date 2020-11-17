@@ -1,0 +1,8 @@
+<template name="article">
+  <view class="title">
+    <text>{{title}}</text>
+    <view class="mask">
+      <text>发布日期：{{date}}　浏览次数：{{view}}</text>
+    </view>
+  </view>
+</template>

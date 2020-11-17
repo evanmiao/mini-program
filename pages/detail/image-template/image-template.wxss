@@ -1,0 +1,63 @@
+.main .image-title {
+  border: none !important;
+}
+
+.main swiper {
+  height: 450rpx;
+}
+
+.main .swiper-img {
+  display: block;
+  margin: 0 auto;
+  width: 450rpx;
+}
+
+.main .tab {
+  width: 94%;
+  padding-top: 40rpx;
+  margin: 0 3%;
+  border-bottom: 2px solid #1e468e;
+}
+
+.main .tab .span {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 150rpx;
+  font-size: 22rpx;
+  text-align: center;
+  background: linear-gradient(#3c6fc8, #1e468e);
+  color: #fff;
+}
+
+.form-wrap {
+  width: 90%;
+  padding: 3%;
+  margin: 3% auto;
+}
+
+.form-wrap form input,
+.form-wrap form textarea {
+  width: 94%;
+  padding: 10rpx 3%;
+  border: 1px solid #dcdcdc;
+  border-radius: 5rpx;
+  margin-bottom: 5%;
+  outline: none;
+  text-indent: 10rpx;
+  color: #333;
+}
+
+.form-wrap form textarea {
+  height: 8em;
+}
+
+.form-wrap form button {
+  color: #fff;
+  font: 30rpx/80rpx;
+  background: #1296db;
+  border: none;
+  box-shadow: none;
+}

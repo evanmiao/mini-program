@@ -1,0 +1,13 @@
+/**app.wxss**/
+@import "./utils/iconfont.wxss";
+@import "/wxParse/wxParse.wxss";
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+view {
+  box-sizing: border-box;
+}

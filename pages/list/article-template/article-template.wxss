@@ -1,0 +1,39 @@
+.content .news-item {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.content .news-item .news-img {
+  float: left;
+  width: 200rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+
+.content .news-item .news-title {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  margin-bottom: 10rpx;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content .news-item .news-discription {
+  font-size: 22rpx;
+  line-height: 30rpx;
+  height: 58rpx;
+  color: #999;
+  overflow: hidden;
+  margin-bottom: 8rpx;
+}
+
+.content .news-item .news-view {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.content .news-item .news-date {
+  padding-left: 20rpx;
+}

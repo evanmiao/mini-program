@@ -1,0 +1,8 @@
+<template name="case">
+  <view class="case-item">
+    <navigator url="/pages/detail/detail?type={{type}}&id={{id}}">
+      <image class="case-img" src="{{imgUrl}}" mode="widthFix"></image>
+      <text>{{title}}</text>
+    </navigator>
+  </view>
+</template>

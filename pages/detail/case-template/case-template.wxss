@@ -1,0 +1,3 @@
+.main .case-title {
+  border: none !important;
+}

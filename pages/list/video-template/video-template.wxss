@@ -1,0 +1,9 @@
+.content .video-img {
+  width: 94vw;
+  border: 1px solid #e5e5e5;
+  border-radius: 5rpx;
+  padding: 2%;
+  background: #fff;
+  margin-bottom: 12rpx;
+  box-sizing: border-box;
+}

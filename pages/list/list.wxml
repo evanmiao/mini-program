@@ -1,0 +1,16 @@
+<import src="article-template/article-template.wxml" />
+<import src="image-template/image-template.wxml" />
+<import src="video-template/video-template.wxml" />
+<import src="case-template/case-template.wxml" />
+
+<header></header>
+<accordion type="{{type}}" title="{{accordionData.title}}" subChannel="{{accordionData.subChannel}}"></accordion>
+<!-- 列表 -->
+<view class="content">
+  <template is="{{type}}" wx:for="{{templateData}}" wx:key="id" data="{{...templateData[index],type}}"></template>
+</view>
+<!-- 分页 -->
+<view class="load-more">
+  <button class="btn primary" catch:tap="loadMore">点击加载更多</button>
+</view>
+<footer></footer>

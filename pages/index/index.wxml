@@ -1,0 +1,157 @@
+<header></header>
+<view class="container">
+  <!-- 轮播图 -->
+  <view class="swiper-wrap">
+    <swiper indicator-dots="true" indicator-active-color="#1296db" autoplay="true" circular="true" interval="3000">
+      <block wx:for="{{imgUrls}}" wx:for-item="url" wx:key="*this">
+        <swiper-item>
+          <image class="swiper-img" src="{{url}}" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 产品导航 -->
+  <view class="product-nav">
+    <navigator url="/pages/list/list?type=image&id=7">
+      <view class="nav-icon gongshuixiang"></view>
+      <text>供水箱</text>
+    </navigator>
+    <navigator url="/pages/list/list?type=image&id=4">
+      <view class="nav-icon gongshuiqi"></view>
+      <text>供水器</text>
+    </navigator>
+    <navigator url="/pages/list/list?type=image&id=8">
+      <view class="nav-icon shuibeng"></view>
+      <text>水泵</text>
+    </navigator>
+    <navigator url="/pages/list/list?type=image&id=9">
+      <view class="nav-icon jingshuiqi"></view>
+      <text>净水器</text>
+    </navigator>
+  </view>
+  <!-- 热门产品 -->
+  <view class="popular">
+    <view class="title-area">
+      <view class="title">
+        <text>热门产品</text>
+      </view>
+      <view class="subtitle">
+        <text>无塔供水器,压力罐,供水设备,压力罐家用</text>
+      </view>
+      <view class="tit-icon left-icon"></view>
+      <view class="tit-icon right-icon"></view>
+    </view>
+    <!-- 轮播 -->
+    <view class="swiper-wrap">
+      <swiper indicator-dots="true" indicator-active-color="#1296db" autoplay="true" circular="true" interval="3000">
+        <block wx:for="{{productsData}}" wx:key="id">
+          <swiper-item>
+            <navigator url="/pages/detail/detail?type=image&id={{item.id}}">
+              <image class="swiper-img" mode="widthFix" src="{{item.imgUrl}}"></image>
+            </navigator>
+            <navigator url="/pages/detail/detail?type=image&id={{item.id}}">
+              <text class="swiper-content">{{item.title}}</text>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="more">
+      <navigator url="/pages/list/list?type=image" class="item cheak-more">查看更多</navigator>
+      <navigator url="/pages/cover/cover?page=contact" class="item online-consultation">
+        在线咨询
+      </navigator>
+    </view>
+    <view class="isolation"></view>
+  </view>
+  <!-- 视频中心 -->
+  <view class="video">
+    <view class="title-area">
+      <view class="title">
+        <text>视频中心</text>
+      </view>
+      <view class="subtitle">
+        <text>您的认可就是我们的动力</text>
+      </view>
+      <view class="tit-icon left-icon"></view>
+      <view class="tit-icon right-icon"></view>
+    </view>
+    <view class="content">
+      <block wx:for="{{videosData}}" wx:key="id">
+        <navigator url="/pages/detail/detail?type=video&id={{item.id}}">
+          <image class="video-img" src="{{item.imgUrl}}" mode="widthFix"></image>
+        </navigator>
+      </block>
+    </view>
+    <view class="more">
+      <navigator url="/pages/list/list?type=video" class="item cheak-more">查看更多</navigator>
+      <navigator url="/pages/cover/cover?page=contact" class="item online-consultation">
+        在线咨询
+      </navigator>
+    </view>
+    <view class="isolation"></view>
+  </view>
+  <!-- 技术新闻 -->
+  <view class="news">
+    <view class="title-area">
+      <view class="title">
+        <text>新闻动态</text>
+      </view>
+      <view class="subtitle">
+        <text>关注行业新闻· 了解最新资讯</text>
+      </view>
+      <view class="tit-icon left-icon"></view>
+      <view class="tit-icon right-icon"></view>
+    </view>
+    <view class="content">
+      <block wx:for="{{newsData}}" wx:key="id">
+        <navigator class="news-item clearfix" url="/pages/detail/detail?type=article&id={{item.id}}">
+          <image class="news-img" src="{{item.imgUrl}}"></image>
+          <view class="news-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view class="news-discription">
+            <text>{{item.discription}}</text>
+          </view>
+          <view class="news-view">
+            <text>阅读数：{{item.view}}</text>
+            <text class="news-date">日期：{{item.date}}</text>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <view class="more">
+      <navigator url="/pages/list/list?type=article" class="item cheak-more">查看更多</navigator>
+      <navigator url="/pages/cover/cover?page=contact" class="item online-consultation">
+        在线咨询
+      </navigator>
+    </view>
+    <view class="isolation"></view>
+  </view>
+  <!-- 企业简介 -->
+  <view class="introduction">
+    <view class="title-area">
+      <view class="title">
+        <text>关于我们</text>
+      </view>
+      <view class="subtitle">
+        <text>科技领先 · 优质高效 · 客户至上 · 遵信守约</text>
+      </view>
+      <view class="tit-icon left-icon"></view>
+      <view class="tit-icon right-icon"></view>
+    </view>
+    <view class="about">
+      <image src="https://www.zhyuanyu.com/wp-content/themes/zhyuanyu/skin/mobile/images/about.jpg" mode="widthFix"></image>
+      <view class="about-title">临沂状元雨官方网站</view>
+      <text>{{about}}</text>
+    </view>
+    <view class="more">
+      <navigator url="/pages/cover/cover?page=about" class="item cheak-more">查看更多</navigator>
+      <navigator url="/pages/cover/cover?page=contact" class="item online-consultation">
+        在线咨询
+      </navigator>
+    </view>
+    <view class="isolation"></view>
+  </view>
+</view>
+<footer></footer>

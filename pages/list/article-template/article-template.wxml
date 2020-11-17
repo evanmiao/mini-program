@@ -1,0 +1,11 @@
+<template name="article">
+<navigator class="news-item clearfix" url="/pages/detail/detail?type={{type}}&id={{id}}">
+  <image class="news-img" src="{{imgUrl}}"></image>
+  <view class="news-title"><text>{{title}}</text></view>
+  <view class="news-discription"><text>{{discription}}</text></view>
+  <view class="news-view">
+    <text>阅读数：{{view}}</text>
+    <text class="news-date">日期：{{date}}</text>
+  </view>
+</navigator>
+</template>

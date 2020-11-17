@@ -1,0 +1,5 @@
+<template name="video">
+  <navigator url="/pages/detail/detail?type={{type}}&id={{id}}">
+    <image class="video-img" src="{{imgUrl}}" mode="widthFix"></image>
+  </navigator>
+</template>

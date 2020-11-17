@@ -1,0 +1,15 @@
+<header></header>
+<view class="title">
+  <text>在线留言</text>
+</view>
+<view class="content">
+  <form bindsubmit="formSubmit" report-submit="true" report-type="subscribe" subscribe-id="message" template-id="BD0841">
+    <input name="name" maxlength="20" placeholder="姓名" />
+    <input name="tel" maxlength="20" placeholder="手机号码" />
+    <textarea name="nr" placeholder="咨询内容" />
+    <view class="btn-area">
+      <button formType="submit" type="primary">提 交</button>
+    </view>
+  </form>
+</view>
+<footer></footer>

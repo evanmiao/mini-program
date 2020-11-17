@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.content .case-item {
+  width: 45vw;
+  padding: 6rpx;
+  border: 1px solid #ececec;
+  margin-bottom: 26rpx;
+  box-sizing: border-box;
+}
+
+.content .case-item .case-img {
+  width: 100%;
+}
+
+.content .case-item text {
+  display: block;
+  color: #333;
+  height: 60rpx;
+  line-height: 68rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

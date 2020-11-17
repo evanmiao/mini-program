@@ -1,0 +1,9 @@
+.main .title .mask text {
+  font-size: 22rpx;
+  padding-top: 20rpx;
+  color: #666;
+}
+
+.main .content img {
+  margin: 20rpx 0;
+}

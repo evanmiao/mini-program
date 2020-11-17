@@ -1,0 +1,39 @@
+<import src="article-template/article-template.wxml" />
+<import src="image-template/image-template.wxml" />
+<import src="video-template/video-template.wxml" />
+<import src="case-template/case-template.wxml" />
+<import src="../../wxParse/wxParse.wxml" />
+
+<header></header>
+<accordion id="accordion" type="{{type}}" title="{{accordionData.title}}" subChannel="{{accordionData.subChannel}}"></accordion>
+<!-- 详情 -->
+<view class="main">
+  <template is="{{type}}" data="{{...templateData}}"></template>
+  <view class="content">
+    <template is="wxParse" data="{{wxParseData:body.nodes}}"></template>
+  </view>
+  <view class="lxdh">联系电话：0539-2877580</view>
+  <view class="re-link">
+    <view>上一篇：<navigator class="nav" url="/pages/detail/detail?type={{type}}&id={{linksData.prevId}}">{{linksData.prevTitle}}</navigator></view>
+    <view>下一篇：<navigator class="nav" url="/pages/detail/detail?type={{type}}&id={{linksData.nextId}}">{{linksData.nextTitle}}</navigator></view>
+  </view>
+</view>
+<!-- 推荐新闻  -->
+<view class="news">
+  <view class="title">
+    <text>推荐新闻</text>
+    <navigator class="more" url="pages/list/list?type=article" title="新闻动态">更多>></navigator>
+  </view>
+    <view class="content">
+      <block wx:for="{{newsData}}" wx:key="id">
+        <navigator class="news-item clearfix" url="/pages/detail/detail?type=article&id={{item.id}}">
+          <image class="news-img" src="{{item.imgUrl}}"></image>
+          <view class="news-title"><text>{{item.title}}</text></view>
+          <view class="news-discription"><text>{{item.discription}}</text></view>
+          <view class="news-view"><text>阅读数：{{item.view}}</text>
+          <text class="news-date">日期：{{item.date}}</text></view>
+        </navigator>
+      </block>
+    </view>
+</view>
+<footer></footer>

@@ -1,0 +1,8 @@
+<template name="image">
+  <view class="product-item">
+    <navigator url="/pages/detail/detail?type={{type}}&id={{id}}">
+      <image class="product-img" src="{{imgUrl}}" mode="widthFix"></image>
+      <text>{{title}}</text>
+    </navigator>
+  </view>
+</template>

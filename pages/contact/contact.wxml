@@ -1,0 +1,10 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<header></header>
+<view class="title">
+  <text>{{bodyData.title}}</text>
+</view>
+<view class="content">
+  <template is="wxParse" data="{{wxParseData:body.nodes}}"></template>
+</view>
+<footer></footer>

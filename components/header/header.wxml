@@ -1,0 +1,46 @@
+<!-- 头部 -->
+<view class="container">
+	<!-- logo -->
+	<view class="logo"></view>
+	<!-- 侧边菜单展开按钮 -->
+	<view class="sidebar-btn" catch:tap="toggleSidebar">
+		<icon class="iconfont icon-2"></icon>
+	</view>
+	<!-- 侧边菜单 -->
+	<block wx:if="{{showSidebar}}">
+		<view class="mask" catch:tap="toggleSidebar"></view>
+		<view class="sidebar">
+			<view class="sidebar-btn" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-close"></icon>
+			</view>
+			<navigator class="item" url="/pages/index/index" open-type="switchTab" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-wap-home-o menu-icon"></icon>
+				<text>首页</text>
+			</navigator>
+			<navigator class="item" url="/pages/about/about" open-type="switchTab" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-user-o menu-icon"></icon>
+				<text>关于我们</text>
+			</navigator>
+			<navigator class="item" url="/pages/list/list?type=image" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-guanligongju menu-icon"></icon>
+				<text>产品展示</text>
+			</navigator>
+			<navigator class="item" url="/pages/list/list?type=article" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-xitong menu-icon"></icon>
+				<text>技术新闻</text>
+			</navigator>
+			<navigator class="item" url="/pages/list/list?type=video" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-video-o menu-icon"></icon>
+				<text>视频中心</text>
+			</navigator>
+			<navigator class="item" url="/pages/contact/contact" open-type="switchTab" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-service-o menu-icon"></icon>
+				<text>联系我们</text>
+			</navigator>
+			<navigator class="item" url="/pages/list/list?type=case" catch:tap="toggleSidebar">
+				<icon class="iconfont icon-comment-o menu-icon"></icon>
+				<text>案例展示</text>
+			</navigator>
+		</view>
+	</block>
+</view>

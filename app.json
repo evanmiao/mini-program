@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/about/about",
+    "pages/contact/contact",
+    "pages/feedback/feedback",
+    "pages/out/out"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "状元雨供水",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#2f2f2f",
+    "color": "#fff",
+    "selectedColor": "#1296db",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab/shouye.png",
+        "selectedIconPath": "/images/tab/shouye-selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们",
+        "iconPath": "/images/tab/bangzhu.png",
+        "selectedIconPath": "/images/tab/bangzhu-selected.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "电话咨询",
+        "iconPath": "/images/tab/dianhua.png",
+        "selectedIconPath": "/images/tab/dianhua-selected.png"
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "text": "在线留言",
+        "iconPath": "/images/tab/xiaoxi.png",
+        "selectedIconPath": "/images/tab/xiaoxi-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,38 @@
+.title {
+  font-size: 36rpx;
+  padding: 30rpx 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #333;
+}
+
+.content {
+  width: 90%;
+  padding: 3%;
+  margin: 3% auto;
+}
+
+.content form input,
+.content form textarea {
+  width: 94%;
+  padding: 10rpx 3%;
+  border: 1px solid #dcdcdc;
+  border-radius: 5rpx;
+  margin-bottom: 5%;
+  outline: none;
+  text-indent: 10rpx;
+  color: #333;
+}
+
+.content form textarea {
+  height: 8em;
+}
+
+.content form button {
+  color: #fff;
+  font: 30rpx/80rpx;
+  background: #1296db;
+  border: none;
+  box-shadow: none;
+}

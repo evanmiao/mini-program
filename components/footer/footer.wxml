@@ -1,0 +1,39 @@
+<view class="container">
+	<!-- 立即购买 -->
+	<view class="buy-now">
+    <view class="title-area">
+      <view class="title"><text>立即购买</text></view>
+      <view class="subtitle"><text>走向世界的我们</text></view>
+      <view class="tit-icon left-icon"></view>
+      <view class="tit-icon right-icon"></view>
+    </view>
+		<view class="content clearfix" catch:tap="tap">
+			<block wx:for="{{shop}}" wx:key="*this">
+				<view class="item" title="{{item.name}}">
+					<image src="{{item.imgUrl}}" mode="widthFix" data-item-index="{{index}}"></image>
+				</view>
+			</block>
+		</view>
+	</view>
+	<!-- 首页导航 -->
+	<view class="index-nav clearfix">
+		<navigator class="item" url="/pages/index/index" open-type="switchTab">
+			<text>首页</text></navigator>
+		<navigator class="item" url="/pages/about/about" open-type="switchTab">
+			<text>关于我们</text></navigator>
+		<navigator class="item" url="/pages/list/list?type=image">
+			<text>产品展示</text></navigator>
+		<navigator class="item" url="/pages/list/list?type=article">
+			<text>技术新闻</text></navigator>
+		<navigator class="item" url="/pages/list/list?type=video">
+			<text>视频中心</text></navigator>
+		<navigator class="item" url="/pages/contact/contact" open-type="switchTab">
+			<text>联系我们</text></navigator>
+	</view>
+	<!-- 页脚 -->
+	<view class="footer">
+		<view class="copyright">
+			<text>Copyright © 2002-2019 山东简谈家居用品有限公司 版权所有</text>
+		</view>
+	</view>
+</view>

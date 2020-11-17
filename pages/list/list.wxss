@@ -1,0 +1,14 @@
+@import "article-template/article-template.wxss";
+@import "image-template/image-template.wxss";
+@import "video-template/video-template.wxss";
+@import "case-template/case-template.wxss";
+
+.content {
+  width: 94%;
+  margin: 40rpx auto 0;
+}
+
+.load-more {
+  width: 80%;
+  margin: 80rpx auto;
+}

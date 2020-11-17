@@ -1,0 +1,8 @@
+<template name="case">
+  <view class="title case-title">
+    <text>{{title}}</text>
+  </view>
+  <view class="tab">
+    <view class="span">产品详情</view>
+  </view>
+</template>

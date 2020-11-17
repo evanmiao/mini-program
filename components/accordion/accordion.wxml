@@ -1,0 +1,10 @@
+<view class="container">
+	<view class="accordion">
+		<text>{{title}}</text>
+		<icon class="iconfont icon-arrow-up" wx:if="{{isOpen}}" catch:tap="toggleAccordion"></icon>
+		<icon class="iconfont icon-arrow-down" wx:else catch:tap="toggleAccordion"></icon>
+	</view>
+	<view class="accordion-content clearfix" wx:if="{{isOpen}}">
+		<navigator class="item" url="/pages/list/list?type={{item.type}}&id={{item.id}}" wx:for="{{subChannel}}" wx:for-item="item">{{item.name}}</navigator>
+	</view>
+</view>

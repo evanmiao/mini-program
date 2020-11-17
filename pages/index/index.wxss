@@ -1,0 +1,253 @@
+/* 轮播图 */
+swiper {
+  height: 356rpx;
+}
+
+.swiper-img {
+  width: 100%;
+}
+
+/* 产品导航 */
+.product-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40rpx;
+}
+
+.product-nav .nav-icon {
+  width: 92rpx;
+  height: 90rpx;
+  background: url("https://www.zhyuanyu.com/wp-content/themes/zhyuanyu/skin/mobile/images/menu.png");
+  background-size: 400rpx auto;
+  text-align: center;
+}
+
+.product-nav .gongshuixiang {
+  background-position: 0 0;
+}
+
+.product-nav .gongshuiqi {
+  background-position: -100rpx 0;
+}
+
+.product-nav .shuibeng {
+  background-position: -200rpx 0;
+}
+
+.product-nav .jingshuiqi {
+  background-position: -300rpx 0;
+}
+
+.product-nav text {
+  display: block;
+  width: 84rpx;
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+/* 标题 */
+.title-area {
+  position: relative;
+  margin: 50rpx 0;
+  text-align: center;
+}
+
+.title-area .title {
+  font-weight: bold;
+  font-size: 56rpx;
+  color: #000;
+  text-align: center;
+  line-height: 140rpx;
+}
+
+.title-area .subtitle {
+  color: #333;
+  font-size: 32rpx;
+  letter-spacing: 2rpx;
+}
+
+.title-area .tit-icon {
+  width: 80rpx;
+  height: 25rpx;
+  display: block;
+  position: absolute;
+  top: 60rpx;
+  background: url("https://www.zhyuanyu.com/wp-content/themes/zhyuanyu/skin/mobile/images/line.png") no-repeat center;
+  background-size: 80rpx auto;
+}
+
+.title-area .left-icon {
+  left: 3%;
+}
+
+.title-area .right-icon {
+  right: 3%;
+}
+
+/* 查看更多 */
+.more {
+  width: 94%;
+  margin: 50rpx auto;
+  height: 60rpx;
+}
+
+.more .item {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+
+.more .cheak-more {
+  border: 1px solid #1296db;
+  background: #1296db;
+  color: #fff;
+  border-top-left-radius: 5rpx;
+  border-bottom-left-radius: 5rpx;
+}
+
+.more .online-consultation {
+  border: 1px solid #e5e5e5;
+  border-top-right-radius: 5rpx;
+  border-bottom-right-radius: 5rpx;
+  border-left: none;
+}
+
+.isolation {
+  width: 100%;
+  height: 40rpx;
+  background: #f1f1f1;
+}
+
+/* 轮播 */
+.popular .swiper-wrap {
+  margin: 0 5%;
+  background: #f2f3f5;
+  position: relative;
+}
+
+.popular .swiper-item  {
+  height: 100%;
+}
+
+.popular .swiper-img {
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  transform: translateY(-50%);
+  margin-left: 3%;
+}
+
+.popular .swiper-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  margin-top: -16rpx;
+  margin-left: 5rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 视频中心 */
+.video {
+  width: 100%;
+  background-size: 100%;
+  background: url("https://m.zhiyuyg.com/skin/images/a21_02.jpg") center center no-repeat;
+}
+
+.video .content {
+  margin: 0 3% 40rpx;
+}
+
+.video .content .video-img {
+  width: 100%;
+  display: block;
+  border: 1px solid #e5e5e5;
+  border-radius: 5rpx;
+  padding: 2%;
+  background: #fff;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+ /* 技术新闻 */
+.news .content {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.news .content .news-item {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.news .content .news-item:last-child {
+  border: none;
+}
+
+.news .content .news-item .news-img {
+  float: left;
+  width: 200rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+
+.news .content .news-item .news-title {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  margin-bottom: 10rpx;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.news .content .news-item .news-discription {
+  font-size: 22rpx;
+  line-height: 30rpx;
+  height: 58rpx;
+  color: #999;
+  overflow: hidden;
+  margin-bottom: 8rpx;
+}
+
+.news .content .news-item .news-view {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.news .content .news-item .news-date {
+  padding-left: 20rpx;
+}
+
+/* 企业简介 */
+.introduction .about {
+  width: 92%;
+  margin: 0 auto;
+  letter-spacing: 2rpx;
+  text-indent: 64rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.introduction .about image {
+  display: block;
+  width: 100%;
+}
+
+.introduction .about .about-title {
+  font-size: 40rpx;
+  padding: 30rpx 0 20rpx;
+  text-align: center;
+  text-indent: 0;
+}
